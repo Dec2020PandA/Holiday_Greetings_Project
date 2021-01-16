@@ -281,7 +281,7 @@ def send_email(request, card_id):
             this_card.receiver_name = request.POST['name']
             this_card.receiver_email = request.POST['email']
         this_card.save()
-        link=f"http://localhost:8000/view_card/{this_card.unique_id}/{this_card.id}"
+        link=f"www.holidaygreetingscards.com/view_card/{this_card.unique_id}/{this_card.id}"
         subject = request.POST['subject']
         message = f"{request.POST['name']}, You have greeting card waiting for you from {this_user.first_name}. \n Click link to see card: {link}"
         email_from = settings.EMAIL_HOST_USER 
