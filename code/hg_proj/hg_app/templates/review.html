@@ -62,7 +62,7 @@
                 Name: <br><input type="text" name='name' style="display: block; margin-bottom: 20px; width: 100%; height: 20px;" placeholder="Receiver Name">
                 Subject: <br><input type="text" name='subject' style="display: block; margin-bottom: 20px; width: 100%; height: 20px;" placeholder="Your Subject Here">
                 Email: <br><input type="text" name='email' style="display: block; width: 100%; height: 20px;" placeholder="Receiver Email Address Here">
-                <input type="hidden" name="link" value="http://localhost:8000/view_card/{{card.unique_id}}/{{card.id}}"><br>
+                <input type="hidden" name="link" value="www.holidaygreetingscards.com/view_card/{{card.unique_id}}/{{card.id}}"><br>
                 <button type="submit" class="button">{%if card.receiver_name%}Send this card to another person{%else%}Send Your Card{%endif%}</button>
             </form>     
         {%endif%}
